@@ -12,16 +12,62 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-  }
-  
-  
-  p {
-        text-align: center;
+}
 
+h1, p {
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 100px;
+}
+  
+p {
+  font-size: 21px;
+  text-align: center;
+}
+
+.main-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.imageText {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.imageText img {
+  width: 100%;
+  display: block;
+  margin-right: 5%;
+  border: 10px solid rgba(0, 0, 0, 0.498);
+}
+
+.imageText p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Small */
+@media (min-width: 576px) { 
+ }
+
+/* Med */
+@media (min-width: 768px) { 
+ }
+
+/* Large */
+@media (min-width: 992px) { 
+  .imageText img {
+    width: 50%;
   }
 
-h1{
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    color: white;
+  .imageText {
+    flex-direction: row;
+ }
 }
